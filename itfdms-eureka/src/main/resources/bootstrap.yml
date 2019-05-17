@@ -21,7 +21,7 @@ eureka:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://itfdms:itfdms@${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://itfdms:itfdms@itfdms-eureka:8761/eureka/
   server:
     eviction-interval-timer-in-ms: 4000
     enable-self-preservation: false
@@ -31,4 +31,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: '*'
+        include: *
