@@ -18,7 +18,7 @@ eureka:
     hostname: itfdms-eureka
     prefer-ip-address: true
   client:
-    register-with-eureka: true
+    register-with-eureka: false
     fetch-registry: false
     service-url:
       defaultZone: http://itfdms:itfdms@${eureka.instance.hostname}:${server.port}/eureka/
