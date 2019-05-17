@@ -19,7 +19,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://itfdms:itfdms@localhost:8761/eureka/
+      defaultZone: http://itfdms:itfdms@itfdms-eureka:8761/eureka/
   instance:
     prefer-ip-address: true
 
