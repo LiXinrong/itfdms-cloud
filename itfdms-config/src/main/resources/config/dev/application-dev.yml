@@ -1,0 +1,102 @@
+# 加解密根密码
+jasypt:
+  encryptor:
+    password: itfdms #根密码
+
+# Spring 相关
+spring:
+  # zipkin
+  zipkin:
+    enabled: true
+    base-url: http://itfdms_zipkin
+    sleuth:
+    web:
+      client:
+        enabled: true
+    sampler:
+      # 默认的采样比率为0.1，不能看到所有请求数据
+      # 更改采样比率为1，就能看到所有的请求数据了，但是这样会增加接口调用延迟
+      probability: 1.0
+
+myredis:
+  database: 1
+  remote: true
+  password: 111111
+  timeout: 1000
+  maxRedirects: 3
+  nodes:
+    - 127.0.0.1:7001
+    - 127.0.0.1:7002
+    - 127.0.0.1:7003
+  maxActive: 100 #最大连接数  （使用负值表示没有限制）
+  maxIdle: 100 #最大空闲连接数  （使用负值表示没有限制）
+  minIdle: 50 #最小空闲连接数
+  maxWait: 6000  #获取连接最大等待时间 ms  #default -1
+
+redis:
+  cache:
+    expiration: 3601
+
+
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+# feign 配置
+feign:
+  hystrix:
+    enabled: true
+  okhttp:
+    enabled: true
+  httpclient:
+    enabled: false
+  client:
+    config:
+      default:
+        connectTimeout: 10000
+        readTimeout: 10000
+  compression:
+    request:
+      enabled: true
+    response:
+      enabled: true
+
+# hystrix 配置
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE
+          thread:
+            timeoutInMilliseconds: 60000
+  shareSecurityContext: true
+
+#请求处理的超时时间
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+
+# mybaits-plus配置
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  global-config:
+    banner: false
+    db-config:
+      id-type: 0
+      field-strategy: 1
+      table-underline: true
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    map-underscore-to-camel-case: true
+
+# spring security 配置
+security:
+  oauth2:
+    resource:
+      loadBalanced: true
+      token-info-uri: http://itfdms-auth/oauth/check_token

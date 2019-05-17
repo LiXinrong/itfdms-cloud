@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.itfdms.common</groupId>
+    <artifactId>itfdms-common</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>itfdms-common</name>
+    <description>公共模块</description>
+
+    <parent>
+        <groupId>com.itfdms</groupId>
+        <artifactId>itfdms-cloud</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <modules>
+        <module>itfdms-common-core</module>
+        <module>itfdms-common-log</module>
+        <module>itfdms-common-security</module>
+    </modules>
+
+</project>

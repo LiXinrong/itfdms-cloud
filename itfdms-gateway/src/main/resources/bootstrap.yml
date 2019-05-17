@@ -1,0 +1,29 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: itfdms-gateway
+  # 配置中心
+  cloud:
+    config:
+      fail-fast: true
+      name: ${spring.application.name}
+      profile: ${spring.profiles.active}
+      discovery:
+        enabled: true
+        service-id: itfdms-config
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+
+# 注册中心
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    service-url:
+      default-zone: http://itfdms:itfdms@itfdms-eureka:8761/eureka/
+
+
