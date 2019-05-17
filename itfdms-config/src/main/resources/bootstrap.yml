@@ -16,9 +16,7 @@ spring:
 #注册中心
 eureka:
   client:
-    fetch-registry: true
-    register-with-eureka: true
-    serviceUrl:
+    service-url:
       defaultZone: http://itfdms:itfdms@itfdms-eureka:8761/eureka/
   instance:
     prefer-ip-address: true
