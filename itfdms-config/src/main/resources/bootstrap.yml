@@ -16,8 +16,8 @@ spring:
 #注册中心
 eureka:
   client:
-    service-url:
-      default-zone: http://itfdms:itfdms@itfdms-eureka:8761/eureka/
+    serviceUrl:
+      defaultZone: http://itfdms:itfdms@itfdms-eureka:8761/eureka/
   instance:
     prefer-ip-address: true
 
