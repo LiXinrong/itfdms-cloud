@@ -20,7 +20,7 @@ eureka:
   client:
     register-with-eureka: true
     fetch-registry: false
-    serviceUrl:
+    service-url:
       defaultZone: http://itfdms:itfdms@${eureka.instance.hostname}:${server.port}/eureka/
   server:
     eviction-interval-timer-in-ms: 4000
