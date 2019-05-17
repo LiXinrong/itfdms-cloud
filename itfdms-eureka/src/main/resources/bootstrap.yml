@@ -4,8 +4,8 @@ server:
 spring:
   security:
     user:
-      name:
-      password:
+      name: itfdms
+      password: itfdms
   application:
     name: itfdms-eureka
   cloud:
