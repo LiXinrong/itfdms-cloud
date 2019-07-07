@@ -8,11 +8,11 @@ spring:
   # zipkin
   zipkin:
     enabled: true
-    base-url: http://itfdms_zipkin
+    base-url: http://itfdms-zipkin
     sleuth:
-    web:
-      client:
-        enabled: true
+      web:
+        client:
+          enabled: true
     sampler:
       # 默认的采样比率为0.1，不能看到所有请求数据
       # 更改采样比率为1，就能看到所有的请求数据了，但是这样会增加接口调用延迟
@@ -33,9 +33,6 @@ myredis:
   minIdle: 50 #最小空闲连接数
   maxWait: 6000  #获取连接最大等待时间 ms  #default -1
 
-redis:
-  cache:
-    expiration: 3601
 
 
 # 暴露监控端点

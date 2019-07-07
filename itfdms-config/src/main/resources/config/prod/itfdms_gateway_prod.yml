@@ -6,7 +6,7 @@ spring:
       routes:
         # 认证中心
         - id: itfdms-auth
-          uri: lb://itfdms_-auth
+          uri: lb://itfdms-auth
           predicates:
             - Path=/auth/**
           filters:
@@ -15,8 +15,8 @@ spring:
             # 前端密码解密
             - PasswordDecoderFilter
         #UPMS 模块
-        - id: itfdms_-upms
-          uri: lb://itfdms_upms
+        - id: itfdms-upms
+          uri: lb://itfdms-upms
           predicates:
             - Path=/admin/**
           filters:
@@ -33,7 +33,7 @@ spring:
                 fallbackUri: 'forward:/fallback'
         # 代码生成模块
         - id: itfdms_codegen
-          uri: lb://itfdms_codegen
+          uri: lb://itfdms-codegen
           predicates:
             - Path=/gen/**
 
