@@ -14,7 +14,7 @@ spring:
       profile: ${spring.profiles.active}
       discovery:
         enabled: true
-        service-id:itfdms-config
+        service-id: itfdms-config
   main:
     allow-bean-definition-overriding: true
 

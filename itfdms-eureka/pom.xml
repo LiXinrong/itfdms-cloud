@@ -13,6 +13,7 @@
         <groupId>com.itfdms</groupId>
         <artifactId>itfdms-cloud</artifactId>
         <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <dependencies>

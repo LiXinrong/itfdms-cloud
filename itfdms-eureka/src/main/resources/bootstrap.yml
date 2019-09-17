@@ -14,14 +14,18 @@ spring:
 
 # docker-compose部署时候 hostname 换成itfdms-eureka
 eureka:
-  instance:
-    hostname: itfdms-eureka
-    prefer-ip-address: true
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
       defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${server.port}:@project.version@
+    hostname: fragrance-eureka-node1
+    ip-address: 127.0.0.1
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
   server:
     eviction-interval-timer-in-ms: 4000
     enable-self-preservation: false

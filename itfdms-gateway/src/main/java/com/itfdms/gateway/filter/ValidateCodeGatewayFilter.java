@@ -67,10 +67,8 @@ public class ValidateCodeGatewayFilter extends AbstractGatewayFilterFactory {
 				ServerHttpResponse response = exchange.getResponse();
 				response.setStatusCode(HttpStatus.PRECONDITION_REQUIRED);
 				try {
-					return response.writeWith(Mono.just(response.bufferFactory()
-						.wrap(objectMapper.writeValueAsBytes(
-							Result.builder().msg(e.getMessage())
-								.code(CommonConstants.FAIL).build()))));
+					return response.writeWith(Mono.just(response.bufferFactory().wrap(objectMapper.writeValueAsBytes(
+							Result.builder().msg(e.getMessage()).code(CommonConstants.FAIL).build()))));
 				} catch (JsonProcessingException e1) {
 					log.error("对象输出异常", e1);
 				}

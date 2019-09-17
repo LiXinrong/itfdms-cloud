@@ -37,6 +37,12 @@
             <artifactId>itfdms-upms-api</artifactId>
             <version>1.0.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.itfdms.upms.api</groupId>
+            <artifactId>itfdms-upms-api</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
 </project>
