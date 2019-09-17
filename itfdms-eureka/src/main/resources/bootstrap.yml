@@ -36,3 +36,7 @@ management:
     web:
       exposure:
         include: '*'
+
+logging:
+  level:
+    com.iftdms.eureka: debug
