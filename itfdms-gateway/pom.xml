@@ -39,7 +39,7 @@
         </dependency>
         <!--common-core-->
         <dependency>
-            <groupId>com.itfdms.common.core</groupId>
+            <groupId>com.itfdms.common</groupId>
             <artifactId>itfdms-common-core</artifactId>
             <version>1.0.0</version>
         </dependency>
