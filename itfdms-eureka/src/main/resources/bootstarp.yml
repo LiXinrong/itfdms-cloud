@@ -12,7 +12,7 @@ spring:
     config:
       enabled: false
 
-# docker-compose部署时候 hostname 换成itfdms-eureka
+#docker-compose部署时候 hostname 换成itfdms-eureka
 eureka:
   client:
     register-with-eureka: false
