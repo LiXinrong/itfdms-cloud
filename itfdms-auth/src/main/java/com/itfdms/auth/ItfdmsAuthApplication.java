@@ -3,6 +3,7 @@ package com.itfdms.auth;
 import com.itfdms.common.security.annotation.EnableItfdmsFeignClients;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 
 /**
@@ -15,6 +16,7 @@ import org.springframework.cloud.client.SpringCloudApplication;
 　　*/
 @SpringCloudApplication
 @EnableItfdmsFeignClients
+@EnableEurekaClient
 public class ItfdmsAuthApplication {
 
     public static void main(String[] args) {

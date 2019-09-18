@@ -13,3 +13,21 @@ services:
       - 8888:8888
     links:
       - itfdms-eureka
+
+  itfdms-gateway:
+    image: itfdms-gateway
+    restart: always
+    ports:
+      - 9999:9999
+    links:
+      - itfdms-eureka
+      - itfdms-config
+
+  itfdms-auth:
+    image: itfdms-auth
+    restart: always
+    ports:
+      - 3000:3000
+    links:
+      - itfdms-eureka
+      - itfdms-config
