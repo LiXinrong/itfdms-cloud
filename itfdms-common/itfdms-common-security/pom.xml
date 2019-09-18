@@ -2,7 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.itfdms.common.security</groupId>
     <artifactId>itfdms-common-security</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
@@ -10,7 +9,7 @@
     <description>权限模块</description>
 
     <parent>
-        <groupId>com.itfdms.common</groupId>
+        <groupId>com.itfdms</groupId>
         <artifactId>itfdms-common</artifactId>
         <version>1.0.0</version>
     </parent>
@@ -18,7 +17,7 @@
     <dependencies>
         <!--工具类核心包-->
         <dependency>
-            <groupId>com.itfdms.common.core</groupId>
+            <groupId>com.itfdms</groupId>
             <artifactId>itfdms-common-core</artifactId>
             <version>1.0.0</version>
         </dependency>
@@ -33,22 +32,16 @@
         </dependency>
         <!--UPMS API-->
         <dependency>
-            <groupId>com.itfdms.upms.api</groupId>
+            <groupId>com.itfdms</groupId>
             <artifactId>itfdms-upms-api</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
-            <groupId>com.itfdms.upms.api</groupId>
+            <groupId>com.itfdms</groupId>
             <artifactId>itfdms-upms-api</artifactId>
             <version>1.0.0</version>
             <scope>compile</scope>
         </dependency>
     </dependencies>
-	
-	<build>
-        <plugins>
-
-        </plugins>
-    </build>
 
 </project>

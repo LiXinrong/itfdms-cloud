@@ -2,7 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.itfdms.upms.biz</groupId>
     <artifactId>itfdms-upms-biz</artifactId>
     <version>1.0.0</version>
     <name>itfdms-upms-biz</name>
@@ -10,7 +9,7 @@
     <description>业务处理模块</description>
 
     <parent>
-        <groupId>com.itfdms.upms</groupId>
+        <groupId>com.itfdms</groupId>
         <artifactId>itfdms-upms</artifactId>
         <version>1.0.0</version>
     </parent>
@@ -18,19 +17,19 @@
     <dependencies>
         <!--upms api、model 模块-->
         <dependency>
-            <groupId>com.itfdms.upms.api</groupId>
+            <groupId>com.itfdms</groupId>
             <artifactId>itfdms-upms-api</artifactId>
             <version>1.0.0</version>
         </dependency>
         <!--安全模块-->
         <dependency>
-            <groupId>com.itfdms.common.security</groupId>
+            <groupId>com.itfdms</groupId>
             <artifactId>itfdms-common-security</artifactId>
             <version>1.0.0</version>
         </dependency>
         <!--日志处理-->
         <dependency>
-            <groupId>com.itfdms.common.log</groupId>
+            <groupId>com.itfdms</groupId>
             <artifactId>itfdms-common-log</artifactId>
             <version>1.0.0</version>
         </dependency>

@@ -2,7 +2,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.itfdms.visiual.codegen</groupId>
     <artifactId>itfdms-visiual-codegen</artifactId>
     <version>1.0.0</version>
     <name>itfdms-visiual-codegen</name>
@@ -10,7 +9,7 @@
     <description>代码生成</description>
 
     <parent>
-        <groupId>com.itfdms.visiual</groupId>
+        <groupId>com.itfdms</groupId>
         <artifactId>itfdms-visiual</artifactId>
         <version>1.0.0</version>
     </parent>
@@ -33,13 +32,13 @@
         </dependency>
         <!--common-->
         <dependency>
-            <groupId>com.itfdms.common.core</groupId>
+            <groupId>com.itfdms</groupId>
             <artifactId>itfdms-common-core</artifactId>
             <version>1.0.0</version>
         </dependency>
         <!--安全模块-->
         <dependency>
-            <groupId>com.itfdms.common.security</groupId>
+            <groupId>com.itfdms</groupId>
             <artifactId>itfdms-common-security</artifactId>
             <version>1.0.0</version>
         </dependency>
