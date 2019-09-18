@@ -1,10 +1,4 @@
-package com.itfdms.eureka.security;/**
- * @title: WebSecurityConfig
- * @projectName itfdms-cloud
- * @description: TODO
- * @author lxr
- * @date 2019/5/1415:14
- */
+package com.itfdms.eureka.security;
 
 import lombok.SneakyThrows;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
