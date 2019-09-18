@@ -1,33 +1,49 @@
-version: '3'
+version: '2'
 services:
   itfdms-eureka:
-    image: itfdms-eureka
+    build:
+      context: ./
+      dockerfile: ./itfdms-eureka/Dockerfile
     restart: always
     ports:
       - 8761:8761
+    container_name: itfdms-eureka
+    hostname: itfdms-eureka
+    image: itfdms-eureka
 
   itfdms-config:
-    image: itfdms-config
+    build:
+      context: ./
+      dockerfile: ./itfdms-config/Dockerfile
     restart: always
-    ports:
-      - 8888:8888
+    container_name: itfdms-config
+    hostname: itfdms-config
+    image: itfdms-config
     links:
       - itfdms-eureka
 
   itfdms-gateway:
-    image: itfdms-gateway
+    build:
+      context: ./
+      dockerfile: ./itfdms-gateway/Dockerfile
     restart: always
     ports:
       - 9999:9999
+    container_name: itfdms-gateway
+    hostname: itfdms-gateway
+    image: itfdms-gateway
     links:
       - itfdms-eureka
       - itfdms-config
 
   itfdms-auth:
-    image: itfdms-auth
+    build:
+      context: ./
+      dockerfile: ./itfdms-auth/Dockerfile
     restart: always
-    ports:
-      - 3000:3000
+    container_name: itfdms-auth
+    hostname: itfdms-auth
+    image: itfdms-auth
     links:
       - itfdms-eureka
       - itfdms-config

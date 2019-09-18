@@ -219,8 +219,19 @@
     </build>
 
 
-    <repositories>
-        <!--阿里云主仓库，代理了maven central和jcenter仓库 -->
+    <!--<repositories>
+        <repository>
+            <id>rdc-releases</id>
+            <name>rdc-releases</name>
+            <url>https://repo.rdc.aliyun.com/repository/105396-release-IhxPbD/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        &lt;!&ndash;阿里云主仓库，代理了maven central和jcenter仓库 &ndash;&gt;
         <repository>
             <id>aliyun</id>
             <name>aliyun</name>
@@ -232,7 +243,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        <!-- 阿里云代理Spring 官方仓库 -->
+        &lt;!&ndash; 阿里云代理Spring 官方仓库 &ndash;&gt;
         <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
@@ -246,7 +257,7 @@
         </repository>
     </repositories>
     <pluginRepositories>
-        <!-- 阿里云代理Spring 插件仓库 -->
+        &lt;!&ndash; 阿里云代理Spring 插件仓库 &ndash;&gt;
         <pluginRepository>
             <id>spring-plugin</id>
             <name>spring-plugin</name>
@@ -258,6 +269,17 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
-    </pluginRepositories>
+    </pluginRepositories>-->
+
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://repo.rdc.aliyun.com/repository/105396-release-IhxPbD/</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <url>https://repo.rdc.aliyun.com/repository/105396-snapshot-8sRk8K/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
