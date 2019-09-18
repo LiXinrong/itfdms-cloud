@@ -20,8 +20,6 @@ spring:
 #注册中心
 eureka:
   client:
-    register-with-eureka: true
-    fetch-registry: true
     service-url:
       defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@itfdms-eureka:8761/eureka/
   instance:
