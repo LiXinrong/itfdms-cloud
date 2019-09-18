@@ -26,11 +26,9 @@ version: '3'
 services:
   itfdms-eureka:
     image: itfdms-eureka
-    restart: on-failure
+    restart: always
     ports:
       - 8761:8761
-    environment:
-      server_port: 8761
 
   itfdms-config:
     image: itfdms-config
@@ -39,3 +37,36 @@ services:
       - 8888:8888
     links:
       - itfdms-eureka
+      
+      
+      
+   eureka-server配置：
+      #docker-compose部署时候 hostname 换成itfdms-eureka
+      eureka:
+        client:
+          register-with-eureka: false
+          fetch-registry: false
+          service-url:
+            defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+        instance:
+          prefer-ip-address: true
+          instance-id: ${spring.application.name}:${server.port}:@project.version@
+          hostname: ${spring.application.name}
+          ip-address: 127.0.0.1
+          lease-renewal-interval-in-seconds: 5
+          lease-expiration-duration-in-seconds: 15
+        server:
+          eviction-interval-timer-in-ms: 4000
+          enable-self-preservation: false
+          renewal-percent-threshold: 0.9
+
+config-server配置：
+    #注册中心
+    eureka:
+      client:
+        service-url:
+          defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@itfdms-eureka:8761/eureka/
+      instance:
+        prefer-ip-address: true
+        lease-renewal-interval-in-seconds: 5
+        lease-expiration-duration-in-seconds: 15

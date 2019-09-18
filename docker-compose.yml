@@ -2,7 +2,7 @@ version: '3'
 services:
   itfdms-eureka:
     image: itfdms-eureka
-    restart: on-failure
+    restart: always
     ports:
       - 8761:8761
 

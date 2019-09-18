@@ -2,6 +2,10 @@ server:
   port: 3000
 
 spring:
+  security:
+    user:
+      name: itfdms
+      password: itfdms
   application:
     name: itfdms-auth
   profiles:
@@ -18,11 +22,13 @@ spring:
   main:
     allow-bean-definition-overriding: true
 
-# 注册中心配置
+#注册中心
 eureka:
-  instance:
-    prefer-ip-address: true
   client:
     service-url:
-      default-zone: http://itfdms:itfdms@itfdms-eureka:8761/eureka/
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@itfdms-eureka:8761/eureka/
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
 
