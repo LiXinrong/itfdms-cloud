@@ -5,7 +5,6 @@
     <groupId>com.itfdms</groupId>
     <artifactId>itfdms-cloud</artifactId>
     <version>1.0.0</version>
-    <name>${project.artifactId}</name>
     <packaging>pom</packaging>
     <description>itfdms-cloud</description>
 
@@ -219,9 +218,9 @@
     </build>
 
 
-
+<!--
     <repositories>
-        <!--阿里云主仓库，代理了maven central和jcenter仓库 -->
+        &lt;!&ndash;阿里云主仓库，代理了maven central和jcenter仓库 &ndash;&gt;
         <repository>
             <id>aliyun</id>
             <name>aliyun</name>
@@ -233,7 +232,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        <!-- 阿里云代理Spring 官方仓库 -->
+        &lt;!&ndash; 阿里云代理Spring 官方仓库 &ndash;&gt;
         <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
@@ -247,7 +246,7 @@
         </repository>
     </repositories>
     <pluginRepositories>
-        <!-- 阿里云代理Spring 插件仓库 -->
+        &lt;!&ndash; 阿里云代理Spring 插件仓库 &ndash;&gt;
         <pluginRepository>
             <id>spring-plugin</id>
             <name>spring-plugin</name>
@@ -259,6 +258,6 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
-    </pluginRepositories>
+    </pluginRepositories>-->
 
 </project>
