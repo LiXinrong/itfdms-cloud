@@ -38,4 +38,5 @@ management:
         include: '*'
 
 logging:
-  level: debug
+  level:
+    com.itfdms.eureka: debug
