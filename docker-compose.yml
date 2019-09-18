@@ -1,0 +1,17 @@
+version: '3'
+services:
+  itfdms-eureka:
+    image: itfdms-eureka
+    restart: on-failure
+    ports:
+      - 8761:8761
+    environment:
+      server_port: 8761
+
+  itfdms-config:
+    image: itfdms-config
+    restart: always
+    ports:
+      - 8888:8888
+    links:
+      - itfdms-eureka
