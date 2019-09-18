@@ -5,7 +5,6 @@
     <artifactId>itfdms-common-security</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>itfdms-common-security</name>
     <description>权限模块</description>
 
     <parent>

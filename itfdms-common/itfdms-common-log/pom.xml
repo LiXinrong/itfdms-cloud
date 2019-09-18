@@ -5,7 +5,6 @@
     <artifactId>itfdms-common-log</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>itfdms-common-log</name>
     <description>日志模块</description>
 
     <parent>

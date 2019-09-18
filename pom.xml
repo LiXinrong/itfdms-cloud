@@ -5,7 +5,7 @@
     <groupId>com.itfdms</groupId>
     <artifactId>itfdms-cloud</artifactId>
     <version>1.0.0</version>
-    <name>itfdms-cloud</name>
+    <name>${project.artifactId}</name>
     <packaging>pom</packaging>
     <description>itfdms-cloud</description>
 

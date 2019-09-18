@@ -5,14 +5,12 @@
     <artifactId>itfdms-common</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
-    <name>itfdms-common</name>
     <description>公共模块</description>
 
     <parent>
         <groupId>com.itfdms</groupId>
         <artifactId>itfdms-cloud</artifactId>
         <version>1.0.0</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <modules>

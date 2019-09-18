@@ -4,13 +4,13 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>itfdms-common-core</artifactId>
     <version>1.0.0</version>
+    <packaging>jar</packaging>
     <description>核心模块</description>
 
     <parent>
         <groupId>com.itfdms</groupId>
         <artifactId>itfdms-common</artifactId>
         <version>1.0.0</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <dependencies>
