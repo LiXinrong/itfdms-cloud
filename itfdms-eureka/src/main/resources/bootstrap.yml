@@ -22,7 +22,7 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: ${spring.application.name}:${server.port}:@project.version@
-    hostname: itfdms-eureka
+    hostname: ${spring.application.name}
     ip-address: 127.0.0.1
     lease-renewal-interval-in-seconds: 5
     lease-expiration-duration-in-seconds: 15
@@ -38,5 +38,4 @@ management:
         include: '*'
 
 logging:
-  level:
-    com.iftdms.eureka: debug
+  level: debug
