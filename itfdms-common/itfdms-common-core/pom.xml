@@ -12,6 +12,7 @@
         <groupId>com.itfdms.common</groupId>
         <artifactId>itfdms-common</artifactId>
         <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <dependencies>
