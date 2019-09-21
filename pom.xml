@@ -211,8 +211,8 @@
         </plugins>
     </build>
 
-    <!--<repositories>
-        &lt;!&ndash;阿里云主仓库，代理了maven central和jcenter仓库 &ndash;&gt;
+    <repositories>
+        <!--阿里云主仓库，代理了maven central和jcenter仓库 -->
         <repository>
             <id>aliyun</id>
             <name>aliyun</name>
@@ -224,7 +224,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-        &lt;!&ndash; 阿里云代理Spring 官方仓库 &ndash;&gt;
+        <!-- 阿里云代理Spring 官方仓库 -->
         <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
@@ -238,7 +238,7 @@
         </repository>
     </repositories>
     <pluginRepositories>
-        &lt;!&ndash; 阿里云代理Spring 插件仓库 &ndash;&gt;
+        <!-- 阿里云代理Spring 插件仓库 -->
         <pluginRepository>
             <id>spring-plugin</id>
             <name>spring-plugin</name>
@@ -251,7 +251,7 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
--->
+
     <distributionManagement>
         <repository>
             <id>rdc-releases</id>
