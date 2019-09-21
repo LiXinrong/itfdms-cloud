@@ -12,13 +12,13 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN mkdir -p /itfdms-auth
 
 #指定容器目录
-WORKDIR /itfdms-config
+WORKDIR /itfdms-auth
 
 #声明运行时容器提供服务端口，这只是一个声明，在运行时并不会因为这个声明应用就会开启这个端口的服务
 EXPOSE 3000
 
 #复制上下文目录下的/target/itfdms-auth.jar 到容器里
-ADD /target/itfdms-auth.jar ./
+ADD ./itfdms-auth/target/itfdms-auth.jar ./
 
 #指定容器启动程序及参数
 CMD java -Djava.security.egd=file:/dev/./urandom -jar itfdms-auth.jar

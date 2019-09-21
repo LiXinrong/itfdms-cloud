@@ -18,7 +18,7 @@ WORKDIR /itfdms-config
 EXPOSE 8888
 
 #复制上下文目录下的/target/itfdms-config.jar 到容器里
-ADD /target/itfdms-config.jar ./
+ADD ./itfdms-config/target/itfdms-config.jar ./
 
 #指定容器启动程序及参数
 CMD java -Djava.security.egd=file:/dev/./urandom -jar itfdms-config.jar

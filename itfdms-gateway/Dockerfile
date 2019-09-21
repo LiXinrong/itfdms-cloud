@@ -18,7 +18,7 @@ WORKDIR /itfdms-gateway
 EXPOSE 9999
 
 #复制上下文目录下的/target/itfdms-auth.jar 到容器里
-ADD /target/itfdms-gateway.jar ./
+ADD ./itfdms-gateway/target/itfdms-gateway.jar ./
 
 #指定容器启动程序及参数
 CMD java -Djava.security.egd=file:/dev/./urandom -jar itfdms-gateway.jar
