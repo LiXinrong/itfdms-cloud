@@ -15,7 +15,7 @@ import org.springframework.context.annotation.ComponentScan;
 　　*/
 @SpringCloudApplication
 @EnableEurekaClient
-@ComponentScan(value = {"com.itfdms.common.core.config"})
+//@ComponentScan(value = {"com.itfdms.common.core.config"})
 public class ItfmdsGatewayApplication {
 
     public static void main(String[] args) {

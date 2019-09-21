@@ -21,8 +21,6 @@ import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
 
-import javax.annotation.Resource;
-
 /**
 　　* @description: 验证码处理
 　　* @param
@@ -37,7 +35,6 @@ import javax.annotation.Resource;
 public class ValidateCodeGatewayFilter extends AbstractGatewayFilterFactory {
 	private final ObjectMapper objectMapper;
 	private final RedisTemplate redisTemplate;
-	@Resource
 	private final FilterIgnorePropertiesConfig filterIgnorePropertiesConfig;
 
 	@Override
