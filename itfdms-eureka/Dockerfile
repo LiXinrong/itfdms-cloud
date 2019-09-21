@@ -18,7 +18,7 @@ WORKDIR /itfdms-eureka
 EXPOSE 8761
 
 #复制上下文目录下的target/itfdms-eureka.jar 到容器里
-ADD ADD itfdms-eureka-1.0.0.jar /target/itfdms-eureka.jar ./
+ADD /target/itfdms-eureka.jar ./
 
 #指定容器启动程序及参数
 CMD java -Djava.security.egd=file:/dev/./urandom -jar itfdms-eureka.jar
