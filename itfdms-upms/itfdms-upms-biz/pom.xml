@@ -4,7 +4,6 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>itfdms-upms-biz</artifactId>
     <version>1.0.0</version>
-    <name>itfdms-upms-biz</name>
     <packaging>jar</packaging>
     <description>业务处理模块</description>
 

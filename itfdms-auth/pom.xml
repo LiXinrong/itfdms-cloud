@@ -10,9 +10,9 @@
 
     <parent>
         <groupId>com.itfdms</groupId>
-        <artifactId>itfdms-cloud</artifactId>
-        <version>1.0.0</version>
-    </parent>
+    <artifactId>itfdms-cloud</artifactId>
+    <version>1.0.0</version>
+</parent>
 
     <dependencies>
         <!--配置中心客户端-->
