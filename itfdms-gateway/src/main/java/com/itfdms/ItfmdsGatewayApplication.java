@@ -14,7 +14,6 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 　　*/
 @SpringCloudApplication
 @EnableEurekaClient
-//@ComponentScan(value = {"com.itfdms.common.core.config"})
 public class ItfmdsGatewayApplication {
 
     public static void main(String[] args) {
