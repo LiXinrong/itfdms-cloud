@@ -41,7 +41,7 @@ spring:
 security:
   encode:
     # 前端密码密钥，必须16位
-    key: 'thanks,itfdms4cloud'
+    key: 'itfdms4cloud,lxrjjj'
 
 # 不校验验证码终端
 ignore:

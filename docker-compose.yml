@@ -1,6 +1,9 @@
 version: '3'
 services:
   itfdms-eureka:
+    build:
+      context: ./
+      dockerfile: ./itfdms-eureka/Dockerfile
     image: itfdms-eureka
     restart: always
     ports:
@@ -8,6 +11,9 @@ services:
     hostname: itfdms-eureka
 
   itfdms-config:
+    build:
+      context: ./
+      dockerfile: ./itfdms-config/Dockerfile
     image: itfdms-config
     hostname: itfdms-config
     restart: always
@@ -17,6 +23,9 @@ services:
       - itfdms-eureka
 
   itfdms-gateway:
+    build:
+      context: ./
+      dockerfile: ./itfdms-gateway/Dockerfile
     image: itfdms-gateway
     hostname: itfdms-gateway
     restart: always
