@@ -39,3 +39,6 @@ ignore:
 
 
 
+logging:
+  level:
+    com.itfdms.gateway: debug
