@@ -73,7 +73,7 @@ hystrix:
         isolation:
           strategy: SEMAPHORE
           thread:
-            timeoutInMilliseconds: 60000
+            timeoutInMilliseconds: 10000
   shareSecurityContext: true
 
 #请求处理的超时时间

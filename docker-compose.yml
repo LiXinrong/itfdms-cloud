@@ -8,6 +8,7 @@ services:
     restart: always
     ports:
       - 8761:8761
+    container_name: itfdms-eureka
     hostname: itfdms-eureka
 
   itfdms-config:
@@ -19,6 +20,7 @@ services:
     restart: always
     ports:
       - 8888:8888
+    container_name: itfdms-config
     links:
       - itfdms-eureka
 
@@ -31,6 +33,7 @@ services:
     restart: always
     ports:
       - 9999:9999
+    container_name: itfdms-gateway
     links:
       - itfdms-eureka
       - itfdms-config

@@ -3,6 +3,7 @@ package com.itfdms.gateway;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
 　　* @description: 网关中心
@@ -14,6 +15,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 　　*/
 @SpringCloudApplication
 @EnableEurekaClient
+@ComponentScan(value = {"com.itfdms.common.core.config"})
 public class ItfmdsGatewayApplication {
 
     public static void main(String[] args) {

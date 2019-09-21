@@ -30,6 +30,7 @@ eureka:
     eviction-interval-timer-in-ms: 4000
     enable-self-preservation: false
     renewal-percent-threshold: 0.9
+    peer-node-read-timeout-ms: 400
 
 management:
   endpoints:
