@@ -37,3 +37,17 @@ services:
     links:
       - itfdms-eureka
       - itfdms-config
+
+  itfdms-auth:
+    build:
+      context: ./
+      dockerfile: ./itfdms-auth/Dockerfile
+    image: itfdms-auth
+    hostname: itfdms-auth
+    restart: always
+    ports:
+      - 3000:3000
+    container_name: itfdms-auth
+    links:
+      - itfdms-eureka
+      - itfdms-config

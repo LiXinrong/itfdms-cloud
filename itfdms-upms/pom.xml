@@ -4,7 +4,6 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>itfdms-upms</artifactId>
     <version>1.0.0</version>
-    <name>itfdms-upms</name>
     <packaging>pom</packaging>
     <description>用户权限管理模块</description>
 
@@ -12,6 +11,7 @@
         <groupId>com.itfdms</groupId>
         <artifactId>itfdms-cloud</artifactId>
         <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
 
     <modules>
