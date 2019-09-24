@@ -15,11 +15,6 @@
 </parent>
 
     <dependencies>
-        <!--配置中心客户端-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-config</artifactId>
-        </dependency>
         <!--upms api、model 模块-->
         <dependency>
             <groupId>com.itfdms</groupId>
@@ -31,6 +26,11 @@
             <groupId>com.itfdms</groupId>
             <artifactId>itfdms-common-security</artifactId>
             <version>1.0.0</version>
+        </dependency>
+        <!--配置中心客户端-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
         <!--JDBC相关-->
         <dependency>

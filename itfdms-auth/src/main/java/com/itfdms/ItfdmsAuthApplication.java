@@ -1,4 +1,4 @@
-package com.itfdms.auth;
+package com.itfdms;
 
 import com.itfdms.common.security.annotation.EnableItfdmsFeignClients;
 import org.springframework.boot.SpringApplication;
